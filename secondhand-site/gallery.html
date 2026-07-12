@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Second Hand — Summerville, GA</title>
+<meta name="description" content="Browse a look at what's in store at Second Hand in Summerville, GA — clothing for men, women, boys, and girls, refreshed with new finds every week.">
+<link rel="canonical" href="https://example.com/gallery.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: "#f5f6f4", ink: "#1c1c1e", inksoft: "#55575a", line: "#e3e5e1",
+          blue: { DEFAULT: "#5b7c99", deep: "#3f5a72" },
+          green: { DEFAULT: "#7c9885", deep: "#5e7869" },
+        },
+        fontFamily: { display: ["Fraunces", "Georgia", "serif"], body: ["Inter", "sans-serif"] },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body bg-white text-ink">
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header id="site-header" data-component="header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-line"></header>
+
+<main id="main">
+
+  <!-- PAGE HEADER -->
+  <section class="bg-paper">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 pt-16 pb-10 sm:pt-20 sm:pb-12">
+      <span class="eyebrow">Gallery</span>
+      <h1 class="font-display text-4xl sm:text-5xl font-semibold mt-3 max-w-2xl">A look at what's on the racks</h1>
+      <p class="text-inksoft text-lg mt-5 max-w-xl leading-relaxed">
+        Our inventory changes constantly — here's a sample of the styles you'll find in store.
+        Photos below are placeholders, ready to be swapped for real in-store shots.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 pt-10">
+    <div class="flex flex-wrap gap-3" role="group" aria-label="Filter gallery by department">
+      <button type="button" data-filter="all" aria-pressed="true" class="px-5 py-2.5 rounded-full text-sm font-medium bg-ink text-white transition-colors">All</button>
+      <button type="button" data-filter="men" aria-pressed="false" class="px-5 py-2.5 rounded-full text-sm font-medium bg-white text-ink border border-line hover:border-ink transition-colors">Men's</button>
+      <button type="button" data-filter="women" aria-pressed="false" class="px-5 py-2.5 rounded-full text-sm font-medium bg-white text-ink border border-line hover:border-ink transition-colors">Women's</button>
+      <button type="button" data-filter="boys" aria-pressed="false" class="px-5 py-2.5 rounded-full text-sm font-medium bg-white text-ink border border-line hover:border-ink transition-colors">Boys'</button>
+      <button type="button" data-filter="girls" aria-pressed="false" class="px-5 py-2.5 rounded-full text-sm font-medium bg-white text-ink border border-line hover:border-ink transition-colors">Girls'</button>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-12" aria-label="Clothing gallery">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+
+      <!-- Items are static placeholder tiles; each is tagged with data-category for filtering -->
+      <figure data-category="women" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/womens.jpg" alt="Women's graphic t-shirts and distressed jeans" loading="lazy" width="1171" height="1869">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-blue-deep">Women's</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Graphic tees & denim</figcaption>
+      </figure>
+
+      <figure data-category="men" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/mens.jpg" alt="Men's striped and solid polo shirts" loading="lazy" width="1536" height="2048">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-green-deep">Men's</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Polo shirts</figcaption>
+      </figure>
+
+      <figure data-category="girls" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/girls.jpg" alt="Girls' floral bow-detail top and legging sets" loading="lazy" width="448" height="446">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-blue-deep">Girls'</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Floral bow-detail set</figcaption>
+      </figure>
+
+      <figure data-category="boys" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/boys.jpg" alt="Boys' Nike and Under Armour t-shirt and shorts sets" loading="lazy" width="1536" height="1508">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-green-deep">Boys'</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Sport tee &amp; shorts sets</figcaption>
+      </figure>
+
+      <figure data-category="women" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/womens.jpg" alt="Women's pink graphic t-shirts on hangers" loading="lazy" width="1171" height="1869">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-blue-deep">Women's</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Statement tees</figcaption>
+      </figure>
+
+      <figure data-category="men" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/mens.jpg" alt="Men's collared shirts, striped and solid" loading="lazy" width="1536" height="2048">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-green-deep">Men's</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Casual button-ups</figcaption>
+      </figure>
+
+      <figure data-category="girls" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/girls.jpg" alt="Girls' matching floral outfits with bow trim" loading="lazy" width="448" height="446">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-blue-deep">Girls'</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Matching outfit sets</figcaption>
+      </figure>
+
+      <figure data-category="boys" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/boys.jpg" alt="Boys' athletic shorts and graphic tees" loading="lazy" width="1536" height="1508">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-green-deep">Boys'</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Athletic basics</figcaption>
+      </figure>
+
+      <figure data-category="women" class="group">
+        <div class="photo-tile aspect-square rounded-sm relative">
+          <img src="images/womens.jpg" alt="Women's casual tees paired with denim" loading="lazy" width="1171" height="1869">
+          <span class="absolute top-3 left-3 text-[10px] font-semibold tracking-[0.1em] uppercase bg-white/90 px-2.5 py-1 rounded-full text-blue-deep">Women's</span>
+        </div>
+        <figcaption class="mt-3 text-sm text-inksoft">Casual tees &amp; denim</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-paper" aria-labelledby="gallery-cta-heading">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 py-20 text-center">
+      <h2 id="gallery-cta-heading" class="font-display text-3xl sm:text-4xl font-semibold">See it in person</h2>
+      <p class="text-inksoft text-lg mt-4 max-w-xl mx-auto leading-relaxed">
+        Photos only tell part of the story — our best finds are on the racks, waiting for you.
+      </p>
+      <a href="contact.html" class="btn btn-primary mt-8">Plan Your Visit</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer" data-component="footer" class="bg-ink"></footer>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader("gallery");
+  renderFooter();
+</script>
+</body>
+</html>
